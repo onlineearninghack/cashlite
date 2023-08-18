@@ -1,0 +1,48 @@
+
+:root {
+    --main-color: #0EB348;
+}
+
+.feature-box .content {
+    box-shadow: inset 0 0px 66px #0EB34847;
+}
+
+.invest-plan-top::before {
+    box-shadow: inset 0 0px 66px #0EB348d4;
+}
+
+.invest-plan::before {
+    box-shadow: inset 0 0px 66px #0EB3483b;
+}
+
+.invest-plan-shape::after {
+    background-color: #0EB34833;
+}
+
+.invest-plan:hover .invest-plan-shape::after {
+    background-color: #0EB348;
+}
+
+.work-box {
+    box-shadow: inset 0 0px 20px #0EB348c4;
+}
+
+.work-box .icon {
+    box-shadow: inset 0 0px 20px #0EB348c4;
+}
+
+.cmn-table.style-separate tbody tr {
+    box-shadow: inset 0 0px 8px #0EB3484d;
+}
+
+.testimonial-box .content {
+    box-shadow: inset 0 0px 20px #0EB348c4;
+}
+
+.referral-box::before {
+    box-shadow: inset 0 0px 20px #0EB348c4;
+}
+
+.referral-box-step {
+    box-shadow: inset 0 0px 6px #0EB3489e;
+}

@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="csrf-token" content="ceCeLXOFEBsNQHdyZ2i6m3v2HchCxqoBsE7snWK8">
+
+
+
+    <link rel="shortcut icon" type="image/png" href="asset/theme1/images/icon/icon.png">
+
+
+
+    <title>
+
+                    Cashlites-
+
+                Login page
+
+    </title>
+
+
+
+
+
+    <link rel="stylesheet" href="asset/theme1/frontend/css/cookie.css">
+
+    <link href="asset/theme1/frontend/img/apple-touch-icon.html" rel="apple-touch-icon">
+
+    <link href="asset/theme1/frontend/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="asset/theme1/frontend/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="asset/theme1/frontend/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+
+    <link href="asset/theme1/frontend/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+
+    <link href="asset/theme1/frontend/vendor/remixicon/remixicon.css" rel="stylesheet">
+
+    <link href="asset/theme1/frontend/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="asset/theme1/frontend/css/selectric.css">
+
+    <link rel="stylesheet" href="asset/theme1/frontend/css/animate.min.css">
+
+    <link rel="stylesheet" href="asset/theme1/frontend/css/slick.css">
+
+    <link rel="stylesheet" href="asset/theme1/frontend/css/font-awsome.min.css">
+
+    <link href="asset/theme1/frontend/css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="asset/theme1/frontend/css/iziToast.min.css">
+
+    <style></style>
+
+    
+
+    <link rel="stylesheet"
+
+        href="asset/theme1/frontend/css/color6352.css">
+
+</head>
+
+
+
+
+
+<body>
+
+
+
+    
+
+
+
+    
+
+
+
+        <main id="main" class="main-img">
+
+
+
+                <section class="auth-section">
+        <div class="auth-wrapper">
+            <div class="auth-top-part">
+                <a href="index.html" class="auth-logo">
+                    <img class="img-fluid rounded sm-device-img text-align" src="asset/theme1/images/logo/logo.png"
+                        width="100%" alt="pp">
+                </a>
+                <p class="mb-0"><span class="me-2">Haven&#039;t an account?</span> <a
+                        class="sp_theme_btn sp_btn_sm" href="register.html">Register</a></p>
+            </div>
+            <div class="auth-body-part">
+                <div class="auth-form-wrapper">
+                    <h3 class="text-center mb-4">Login your account</h3>
+                    <form action="#" method="POST">
+                        <input type="hidden" name="_token" value="ceCeLXOFEBsNQHdyZ2i6m3v2HchCxqoBsE7snWK8">                        <div class="mb-3">
+                            <label for="formGroupExampleInput">Email</label>
+                            <input type="email" class="form-control" name="email" value="" id="email"
+                                placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="formGroupExampleInput">Pasword</label>
+                            <input type="password" class="form-control" name="password" id="password"
+                                placeholder="Enter password">
+                        </div>
+                        <p class="text-end"><a href="forgot/password.html"
+                                class="color-change">Forget password?</a></p>
+                                                <button class="sp_theme_btn w-100" type="submit"> Log in </button>
+                    </form>
+                </div>
+            </div>
+            <div class="auth-footer-part">
+                <p class="text-center mb-0">
+                                            Copyright 2023. make money online in uganda.
+                                    </p>
+            </div>
+        </div>
+        <div class="auth-thumb-area">
+            <div class="auth-thumb">
+                <img src="asset/theme1/images/frontendlogin/frontend_login_image.jpg" alt="image">
+            </div>
+        </div>
+    </section>
+
+
+    </main>
+
+
+
+   
+
+
+
+    <button type="button" class="sp_btn sp_btn_warning  btn-floating btn-lg" id="btn-back-to-top">
+
+        <i class="fas fa-arrow-up text-light"></i>
+
+    </button>
+
+
+
+    <script src="asset/theme1/frontend/js/jquery.min.js"></script>
+
+    <script src="asset/theme1/frontend/vendor/purecounter/purecounter.js"></script>
+
+    <script src="asset/theme1/frontend/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="asset/theme1/frontend/vendor/glightbox/js/glightbox.min.js"></script>
+
+    <script src="asset/theme1/frontend/js/slick.min.js"></script>
+
+    <script src="asset/theme1/frontend/vendor/php-email-form/validate.js"></script>
+
+    <script src="asset/theme1/frontend/js/selectric.min.js"></script>
+
+    <script src="asset/theme1/frontend/js/main.js"></script>
+
+    <script src="asset/theme1/frontend/js/iziToast.min.js"></script>
+
+    <script src="asset/theme1/frontend/js/jquery.uploadPreview.min.js"></script>
+
+
+
+        <script>
+        "use strict";
+        function submitUserForm() {
+            var response = grecaptcha.getResponse();
+            if (response.length == 0) {
+                document.getElementById('g-recaptcha-error').innerHTML =
+                    "<span class='text-danger'>@changeLang('Captcha field is required.')</span>";
+                return false;
+            }
+            return true;
+        }
+
+        function verifyCaptcha() {
+            document.getElementById('g-recaptcha-error').innerHTML = '';
+        }
+    </script>
+            <script type="text/javascript">
+
+            var Tawk_API = Tawk_API || {},
+
+                Tawk_LoadStart = new Date();
+
+            (function() {
+
+                var s1 = document.createElement("script"),
+
+                    s0 = document.getElementsByTagName("script")[0];
+
+                s1.async = true;
+
+                s1.src = "../external.html?link=https://embed.tawk.to/https://embed.tawk.to/64dcf3c194cf5d49dc6ac532/1h7vhgc88";
+
+                s1.charset = 'UTF-8';
+
+                s1.setAttribute('crossorigin', '*');
+
+                s0.parentNode.insertBefore(s1, s0);
+
+            })();
+
+        </script>
+
+    
+
+
+
+
+
+    
+
+    
+
+    
+
+    
+
+
+
+    <script>
+
+        'use strict';
+
+        
+
+
+
+
+
+        $(document).ready(function() {
+
+            $('#trial_subscribe').on('click', function(e) {
+
+
+
+                e.preventDefault();
+
+                var email = $('#trial_email').val();
+
+
+
+                $.ajaxSetup({
+
+                    headers: {
+
+                        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+
+                    }
+
+                });
+
+
+
+                $.ajax({
+
+                    method: 'POST',
+
+                    url: "https://cashlites.com/subscribe",
+
+                    data: {
+
+                        email: email
+
+                    },
+
+                    success: function(response) {
+
+
+
+                        if (response.fails) {
+
+                            notify('error', response.errorMsg.email)
+
+
+
+                        }
+
+
+
+                        if (response.success) {
+
+                            $('#email').val('');
+
+                            notify('success', response.successMsg)
+
+
+
+                        }
+
+                    }
+
+                });
+
+            })
+
+
+
+
+
+        });
+
+    </script>
+
+
+
+
+
+    <script>
+
+        'use strict'
+
+        var url = "login.html";
+
+
+
+        $(".changeLang").change(function() {
+
+            if ($(this).val() == '') {
+
+                return false;
+
+            }
+
+            window.location.href = url + "?lang=" + $(this).val();
+
+        });
+
+        //Get the button
+
+        let mybutton = document.getElementById("btn-back-to-top");
+
+
+
+        // When the user scrolls down 20px from the top of the document, show the button
+
+        window.onscroll = function() {
+
+            scrollFunction();
+
+        };
+
+
+
+        function scrollFunction() {
+
+            if (
+
+                document.body.scrollTop > 20 ||
+
+                document.documentElement.scrollTop > 20
+
+            ) {
+
+                mybutton.style.display = "block";
+
+            } else {
+
+                mybutton.style.display = "none";
+
+            }
+
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+
+        mybutton.addEventListener("click", backToTop);
+
+
+
+        function backToTop() {
+
+            document.body.scrollTop = 0;
+
+            document.documentElement.scrollTop = 0;
+
+        }
+
+    </script>
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+<!-- Mirrored from cashlites.com/login by HTTrack Website Copier/3.x [XR&CO'2017], Fri, 18 Aug 2023 18:53:09 GMT -->
+
+</html>
+
